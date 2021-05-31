@@ -1,0 +1,16 @@
+<div class="">
+  <div class="container-buttons">
+    <button
+      [ngClass]="{ active: activeLang == 'es' }"
+      (click)="cambiarLenguaje('es')"
+    >
+      Es
+    </button>
+    <button
+      [ngClass]="{ active: activeLang == 'en' }"
+      (click)="cambiarLenguaje('en')"
+    >
+      En
+    </button>
+  </div>
+</div>

@@ -7,6 +7,11 @@ import { AboutComponent } from './about/about.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ServiceComponent } from './service/service.component';
 import { HeroComponent } from './hero/hero.component';
+import { TranslationComponent } from './translation/translation.component';
+
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -17,8 +22,20 @@ import { HeroComponent } from './hero/hero.component';
     ProjectsComponent,
     ServiceComponent,
     HeroComponent,
+    TranslationComponent,
   ],
-  imports: [CommonModule],
+  imports: [
+    CommonModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: (http: HttpClient) => {
+          return new TranslateHttpLoader(http);
+        },
+        deps: [HttpClient],
+      },
+    }),
+  ],
   exports: [
     HeaderComponent,
     FooterComponent,
@@ -27,6 +44,7 @@ import { HeroComponent } from './hero/hero.component';
     ProjectsComponent,
     ServiceComponent,
     HeroComponent,
+    TranslationComponent,
   ],
 })
 export class ComponentsModule {}
