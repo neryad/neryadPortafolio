@@ -1,16 +1,13 @@
-<div class="">
-  <div class="container-buttons">
-    <button
-      [ngClass]="{ active: activeLang == 'es' }"
-      (click)="cambiarLenguaje('es')"
-    >
-      Es
-    </button>
-    <button
-      [ngClass]="{ active: activeLang == 'en' }"
-      (click)="cambiarLenguaje('en')"
-    >
-      En
-    </button>
-  </div>
+<div class="lng-container">
+  <p
+    [ngClass]="{ active: activeLang == 'es' ? 'noActive' : 'active' }"
+    (click)="cambiarLenguaje('es')"
+  >
+    {{ "spanish.texto" | translate }}
+  </p>
+  <p [ngClass]="{ active: activeLang == 'en' }" (click)="cambiarLenguaje('en')">
+    {{ "english.texto" | translate }}
+  </p>
 </div>
+<!-- <div [ngClass]="varA === varB ? 'css-class-1' : 'css-class-2'"> -->
+<!-- active: activeLang == 'es' -->

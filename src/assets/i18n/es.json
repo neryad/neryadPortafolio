@@ -1,3 +1,11 @@
 {
-  "about.texto": "Acerca de"
+  "home.texto": "Inicio",
+  "projects.texto": "Proyectos",
+  "about.texto": "Acerca de",
+  "contact.texto": "Contacto",
+  "spanish.texto": "Español",
+  "english.texto": "Ingles",
+  "hello.texto": "Hola",
+  "myNameIs.texto": "Mi nombre es",
+  "recent.texto": "Ultimos"
 }

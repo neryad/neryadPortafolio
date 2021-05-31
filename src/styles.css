@@ -31,6 +31,9 @@ p {
   font-weight: 300;
   letter-spacing: 0.05rem;
 }
+.activeLng ::after {
+  color: #41cad9 !important;
+}
 .section-title {
   font-size: 4rem;
   font-weight: 300;

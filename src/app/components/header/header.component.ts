@@ -1,6 +1,7 @@
 import { AfterViewInit } from '@angular/core';
 import { ElementRef } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-header',
@@ -8,7 +9,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.css'],
 })
 export class HeaderComponent implements OnInit, AfterViewInit {
-  constructor(private el: ElementRef) {}
+  public activeLang = 'es';
+  constructor(private el: ElementRef, private translate: TranslateService) {
+    this.translate.setDefaultLang(this.activeLang);
+  }
   ngAfterViewInit(): void {
     let hamburger = document.querySelector(
       '.header .nav-bar .nav-list .hamburger'
@@ -34,4 +38,9 @@ export class HeaderComponent implements OnInit, AfterViewInit {
     });
   }
   ngOnInit(): void {}
+
+  public cambiarLenguaje(lang: any) {
+    this.activeLang = lang;
+    this.translate.use(lang);
+  }
 }

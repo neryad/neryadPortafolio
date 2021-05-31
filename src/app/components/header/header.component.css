@@ -1,0 +1,9 @@
+.lngText {
+  font-size: 1.3rem !important;
+  cursor: pointer;
+}
+
+.lngSpan {
+  font-size: 2.5rem !important;
+  color: #41cad9 !important;
+}
