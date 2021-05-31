@@ -41,7 +41,7 @@ p {
   text-align: center;
 }
 .section-title span {
-  color: crimson;
+  color: #41cad9;
 }
 
 .cta {
@@ -49,7 +49,7 @@ p {
   padding: 10px 30px;
   color: white;
   background-color: transparent;
-  border: 2px solid crimson;
+  border: 2px solid #41cad9;
   font-size: 2rem;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
@@ -59,7 +59,7 @@ p {
 }
 .cta:hover {
   color: white;
-  background-color: crimson;
+  background-color: #41cad9;
 }
 .brand h1 {
   font-size: 3rem;
@@ -67,7 +67,7 @@ p {
   color: white;
 }
 .brand h1 span {
-  color: crimson;
+  color: #41cad9;
 }
 
 /* Header section */
@@ -139,7 +139,7 @@ p {
   letter-spacing: initial;
 }
 #header .nav-list ul li:hover a {
-  color: crimson;
+  color: #41cad9;
 }
 #header .hamburger {
   height: 60px;
@@ -247,7 +247,7 @@ p {
   left: 0;
   height: 100%;
   width: 0;
-  background-color: crimson;
+  background-color: #41cad9;
   animation: text_reveal_box 1s ease;
   animation-delay: 0.5s;
 }
@@ -304,7 +304,8 @@ p {
   top: 0;
   height: 100%;
   width: 100%;
-  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+  background-image: linear-gradient(60deg, #1a1826 0%, #1a1826 100%);
+
   opacity: 0.9;
   z-index: -1;
 }
@@ -359,7 +360,7 @@ p {
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
-  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+  background-image: linear-gradient(60deg, #1a1826 0%, #1a1826 100%);
   color: white;
 }
 #projects .project-info h1 {
@@ -387,7 +388,7 @@ p {
   top: 0;
   height: 100%;
   width: 100%;
-  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+  background-image: linear-gradient(60deg, #1a1826 0%, #1a1826 100%);
   opacity: 0.7;
 }
 #projects .project-img img {
@@ -441,7 +442,7 @@ p {
   top: 19px;
   height: 98%;
   width: 98%;
-  border: 7px solid crimson;
+  border: 7px solid #41cad9;
   z-index: -1;
 }
 /* End About Section */
@@ -493,7 +494,7 @@ p {
 
 /* Footer */
 #footer {
-  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+  background-image: linear-gradient(60deg, #1a1826 0%, #1a1826 100%);
 }
 #footer .footer {
   min-height: 200px;
@@ -559,7 +560,7 @@ p {
 }
 @keyframes text_reveal_name {
   100% {
-    color: crimson;
+    color: #41cad9;
     font-weight: 500;
   }
 }
@@ -623,7 +624,7 @@ p {
     top: 34px;
     height: 98%;
     width: 98%;
-    border: 10px solid crimson;
+    border: 10px solid #41cad9;
   }
   #about .col-right {
     text-align: left;
