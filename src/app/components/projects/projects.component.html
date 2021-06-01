@@ -7,99 +7,19 @@
       </h1>
     </div>
     <div class="all-projects">
-      <div class="project-item">
+      <div *ngFor="let project of projects" class="project-item">
         <div class="project-info">
-          <h1>Project 1</h1>
-          <h2>Coding is Love</h2>
+          <h1>{{ project.name }}</h1>
+          <h2>{{ project.subTitle }}</h2>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto
-            cupiditate voluptatum impedit unde rem ipsa distinctio illum quae
-            mollitia ut, accusantium eius odio ducimus illo neque atque libero
-            non sunt harum? Ipsum repellat animi, fugit architecto voluptatum
-            odit et!
+            {{ project.description | translate }}
           </p>
+          <a [href]="project.link" class="cta cta-pro">{{
+            "see.texto" | translate
+          }}</a>
         </div>
         <div class="project-img">
-          <img
-            src="https://images.unsplash.com/photo-1581090697136-6bb1384e9700?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=634&q=80"
-            alt="img"
-          />
-        </div>
-      </div>
-      <div class="project-item">
-        <div class="project-info">
-          <h1>Project 2</h1>
-          <h2>Coding is Love</h2>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto
-            cupiditate voluptatum impedit unde rem ipsa distinctio illum quae
-            mollitia ut, accusantium eius odio ducimus illo neque atque libero
-            non sunt harum? Ipsum repellat animi, fugit architecto voluptatum
-            odit et!
-          </p>
-        </div>
-        <div class="project-img">
-          <img
-            src="https://images.unsplash.com/photo-1581090697136-6bb1384e9700?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=634&q=80"
-            alt="img"
-          />
-        </div>
-      </div>
-      <div class="project-item">
-        <div class="project-info">
-          <h1>Project 3</h1>
-          <h2>Coding is Love</h2>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto
-            cupiditate voluptatum impedit unde rem ipsa distinctio illum quae
-            mollitia ut, accusantium eius odio ducimus illo neque atque libero
-            non sunt harum? Ipsum repellat animi, fugit architecto voluptatum
-            odit et!
-          </p>
-        </div>
-        <div class="project-img">
-          <img
-            src="https://images.unsplash.com/photo-1581090697136-6bb1384e9700?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=634&q=80"
-            alt="img"
-          />
-        </div>
-      </div>
-      <div class="project-item">
-        <div class="project-info">
-          <h1>Project 4</h1>
-          <h2>Coding is Love</h2>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto
-            cupiditate voluptatum impedit unde rem ipsa distinctio illum quae
-            mollitia ut, accusantium eius odio ducimus illo neque atque libero
-            non sunt harum? Ipsum repellat animi, fugit architecto voluptatum
-            odit et!
-          </p>
-        </div>
-        <div class="project-img">
-          <img
-            src="https://images.unsplash.com/photo-1581090697136-6bb1384e9700?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=634&q=80"
-            alt="img"
-          />
-        </div>
-      </div>
-      <div class="project-item">
-        <div class="project-info">
-          <h1>Project 5</h1>
-          <h2>Coding is Love</h2>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto
-            cupiditate voluptatum impedit unde rem ipsa distinctio illum quae
-            mollitia ut, accusantium eius odio ducimus illo neque atque libero
-            non sunt harum? Ipsum repellat animi, fugit architecto voluptatum
-            odit et!
-          </p>
-        </div>
-        <div class="project-img">
-          <img
-            src="https://images.unsplash.com/photo-1581090697136-6bb1384e9700?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=634&q=80"
-            alt="img"
-          />
+          <img [src]="project.img" alt="img" />
         </div>
       </div>
     </div>

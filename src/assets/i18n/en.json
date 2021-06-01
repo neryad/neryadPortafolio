@@ -7,5 +7,9 @@
   "english.texto": "English",
   "hello.texto": "Hello",
   "myNameIs.texto": "My name is",
-  "recent.texto": "Recent"
+  "recent.texto": "Recent",
+  "see.texto": "Go",
+  "descpPoc.texto": "Is a simple application that seeks to support you in organizing your shopping list, so when you go out, you won't forget anything. You can use it for whatever you want, to go to the supermarket, hardware store, home shopping, Valentine's day list, Christmas, Mom's and Dad's gifts. Available totally free on google play and app store",
+  "descTelphone.texto": "It is an npm package that helps us quickly and easily validate if a phone number is well written..",
+  "descBr.texto": "Personal and responsive portfolio for one of our clients."
 }

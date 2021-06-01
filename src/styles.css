@@ -60,6 +60,10 @@ p {
   transition: 0.3s ease;
   transition-property: background-color, color;
 }
+
+.cta-pro {
+  padding: 2px 7px !important;
+}
 .cta:hover {
   color: white;
   background-color: #41cad9;
