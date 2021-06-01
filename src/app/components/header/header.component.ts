@@ -2,6 +2,7 @@ import { AfterViewInit } from '@angular/core';
 import { ElementRef } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
+import { HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -13,6 +14,19 @@ export class HeaderComponent implements OnInit, AfterViewInit {
   constructor(private el: ElementRef, private translate: TranslateService) {
     this.translate.setDefaultLang(this.activeLang);
   }
+
+  @HostListener('window:scroll', [''])
+  onWindowScroll(): void {
+    console.log('Currently scrolling');
+    let header = this.el.nativeElement.querySelector('.header.container');
+    const yOffSet = window.pageYOffset;
+    if (yOffSet > 200) {
+      header.style.backgroundColor = '#29323c';
+    } else {
+      header.style.backgroundColor = 'transparent';
+    }
+  }
+
   ngAfterViewInit(): void {
     let hamburger = document.querySelector(
       '.header .nav-bar .nav-list .hamburger'
@@ -20,22 +34,24 @@ export class HeaderComponent implements OnInit, AfterViewInit {
     let mobile_menu = this.el.nativeElement.querySelector(
       '.header .nav-bar .nav-list ul'
     );
-    let header = this.el.nativeElement.querySelector('.header.container');
 
     hamburger!.addEventListener('click', () => {
       hamburger!.classList.toggle('active');
       mobile_menu.classList.toggle('active');
     });
 
-    this.el.nativeElement.addEventListener('scroll', () => {
-      let scroll_position = window.scrollY;
+    // header.addEventListener('scroll', () => {
+    //   console.log('erere');
 
-      if (scroll_position > 250) {
-        header.style.backgroundColor = '#29323c';
-      } else {
-        header.style.backgroundColor = 'transparent';
-      }
-    });
+    //   let scroll_position = window.scrollY;
+    //   const yOffSet = window.pageYOffset;
+
+    //   if (scroll_position > 50) {
+    //     header.style.backgroundColor = '#29323c';
+    //   } else {
+    //     header.style.backgroundColor = 'transparent';
+    //   }
+    // });
   }
   ngOnInit(): void {}
 
