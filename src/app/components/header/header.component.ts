@@ -39,19 +39,6 @@ export class HeaderComponent implements OnInit, AfterViewInit {
       hamburger!.classList.toggle('active');
       mobile_menu.classList.toggle('active');
     });
-
-    // header.addEventListener('scroll', () => {
-    //   console.log('erere');
-
-    //   let scroll_position = window.scrollY;
-    //   const yOffSet = window.pageYOffset;
-
-    //   if (scroll_position > 50) {
-    //     header.style.backgroundColor = '#29323c';
-    //   } else {
-    //     header.style.backgroundColor = 'transparent';
-    //   }
-    // });
   }
   ngOnInit(): void {}
 
