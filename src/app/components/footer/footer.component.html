@@ -5,26 +5,8 @@
     </div>
     <h2>Your Complete Web Solution</h2>
     <div class="social-icon">
-      <div class="social-item">
-        <a href="#"
-          ><img
-            src="https://img.icons8.com/bubbles/100/000000/instagram-new.png"
-        /></a>
-      </div>
-      <div class="social-item">
-        <a href="#"
-          ><img src="https://img.icons8.com/bubbles/100/000000/twitter.png"
-        /></a>
-      </div>
-      <div class="social-item">
-        <a href="#"
-          ><img src="https://img.icons8.com/bubbles/100/000000/linkedin.png"
-        /></a>
-      </div>
-      <div class="social-item">
-        <a href="mailto:neryadg@gmail.com?Subject=contact%20from%20web%20page"
-          ><img src="https://img.icons8.com/bubbles/100/000000/new-post.png"
-        /></a>
+      <div class="social-item" *ngFor="let social of socials">
+        <a [href]="social.link"><img [src]="social.icon" /></a>
       </div>
     </div>
     <p>Copyright © 2021 neryad. All rights reserved</p>

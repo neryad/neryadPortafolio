@@ -21,7 +21,7 @@ export class HeaderComponent implements OnInit, AfterViewInit {
     let header = this.el.nativeElement.querySelector('.header.container');
     const yOffSet = window.pageYOffset;
     if (yOffSet > 200) {
-      header.style.backgroundColor = '#29323c';
+      header.style.backgroundColor = '#1a1826';
     } else {
       header.style.backgroundColor = 'transparent';
     }
