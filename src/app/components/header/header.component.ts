@@ -17,7 +17,6 @@ export class HeaderComponent implements OnInit, AfterViewInit {
 
   @HostListener('window:scroll', [''])
   onWindowScroll(): void {
-    console.log('Currently scrolling');
     let header = this.el.nativeElement.querySelector('.header.container');
     const yOffSet = window.pageYOffset;
     if (yOffSet > 200) {
