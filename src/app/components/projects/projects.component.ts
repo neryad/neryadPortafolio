@@ -16,11 +16,18 @@ export class ProjectsComponent implements OnInit {
       link: 'https://neryad.github.io/pocketPage/',
     },
     {
-      name: 'TelePhoneCheck',
+      name: 'TelePhoneCheck -NPM',
       subTitle: '',
       description: 'descTelphone.texto',
       img: '../../../assets/img/projects/telphonecheck.jpg',
       link: 'https://www.npmjs.com/package/telephonecheck',
+    },
+    {
+      name: 'TelePhoneCheck - Pub.dev/flutter',
+      subTitle: '',
+      description: 'descTelphone.texto',
+      img: '../../../assets/img/projects/telefonePub.png',
+      link: 'https://pub.dev/packages/telephone_check',
     },
     {
       name: 'bryanrivas.com',
