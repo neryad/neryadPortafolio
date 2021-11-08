@@ -13,17 +13,28 @@
         </div>
         <ul>
           <li>
-            <a href="#hero" data-after="Home">{{ "home.texto" | translate }}</a>
+            <a
+              href="/"
+              onclick="event.preventDefault(); location.hash='hero';"
+              data-after="Home"
+              >{{ "home.texto" | translate }}</a
+            >
           </li>
           <li>
-            <a href="#projects" data-after="Projects">{{
-              "projects.texto" | translate
-            }}</a>
+            <a
+              href="./#projects"
+              onclick="event.preventDefault(); location.hash='projects';"
+              data-after="Projects"
+              >{{ "projects.texto" | translate }}</a
+            >
           </li>
           <li>
-            <a href="#about" data-after="About">{{
-              "about.texto" | translate
-            }}</a>
+            <a
+              href="./#about"
+              onclick="event.preventDefault(); location.hash='about';"
+              data-after="About"
+              >{{ "about.texto" | translate }}</a
+            >
           </li>
           <li>
             <a

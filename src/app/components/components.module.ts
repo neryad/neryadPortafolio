@@ -12,6 +12,7 @@ import { TranslationComponent } from './translation/translation.component';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { ComponentsRoutingModule } from './components-routing.module';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
   ],
   imports: [
     CommonModule,
+    ComponentsRoutingModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
