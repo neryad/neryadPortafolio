@@ -21,6 +21,14 @@ export class FooterComponent implements OnInit {
       icon: 'https://img.icons8.com/bubbles/100/000000/linkedin.png',
     },
     {
+      link: 'https://github.com/neryad',
+      icon: 'https://img.icons8.com/bubbles/100/000000/github.png',
+    },
+    {
+      link: 'https://www.twitch.tv/neryad',
+      icon: 'https://img.icons8.com/bubbles/100/000000/twitch.png',
+    },
+    {
       link: 'mailto:neryadg@gmail.com?Subject=contact%20from%20web%20page',
       icon: 'https://img.icons8.com/bubbles/100/000000/new-post.png',
     },
