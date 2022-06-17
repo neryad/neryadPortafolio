@@ -15,6 +15,12 @@ const routes: Routes = [
     component: NoPageComponent,
   },
   {
+    path: 'projectsAll',
+    loadChildren: () =>
+      import('./projects-page/projects-page-routing.module').then((m) => m.ProjectsPageRoutingModule),
+
+  },
+  {
     path: '**',
     redirectTo: '404',
   },

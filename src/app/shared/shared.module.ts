@@ -6,6 +6,6 @@ import { ComponentsModule } from '../components/components.module';
 @NgModule({
   declarations: [NoPageComponent],
   imports: [CommonModule, ComponentsModule],
-  exports: [NoPageComponent],
+  exports: [NoPageComponent,],
 })
 export class SharedModule {}

@@ -15,5 +15,18 @@
   "me.texto": "mi",
   "about1.texto": "👋 Hola! soy desarrollador web  orientado mas a las tecnologías javascript con un toque de flutter",
   "about2.texto": "🔨 Herramientas:",
-  "about3.texto": "- JS, Angular, NodeJs, Flutter"
+  "about3.texto": "- JS, Angular, NodeJs, Flutter",
+  "apps.texto": "Aqui puedes ver mas de mis app que he desarrollado, muchas de ella en directo en mi canal de twitch",
+  "rdNews.texto": "App de noticias locales de Rep Dom, usando un backend con nodeJs que hace web-scraping a distintas fuentes de noticias",
+  "descpPoc2.texto": "Es una aplicación simple que buscar apoyarte en la organización de tu lista de compras,hecha con flutter.Disponible totalmente gratis en google play y app store",
+  "nTrix.texto": "Es un juego de tetrix simple hecho con vainilla javascript, para una mejor experiencia de juego en resolución móvil",
+  "quizBrais.texto": "Solución hecho en angular del reto de moureDev en realziar una app de quiz",
+  "llevaCuentas.texto": "App hecha con ionic para manejo de dinero de personas externas o ahorros propios",
+  "memories.texto": "Aplicación hecha con flutter, es un juego de memoria que puedes jugar con tres niveles de dificultad. Dentro del repositorio encontrarás las apks para probar la aplicación",
+  "ticTac.texto": "Juego de tres en raya hecho con flutter. Dentro del repositorio encontrarás las apks para probar la aplicación",
+  "nBattleShips.texto": "Es un juego de barcos de batalla hecho con angular, esto funciona para que dos jugadores jueguen al mismo tiempo",
+  "funkoApi.texto": "Api hecha con nodeJs guarda, lee y actualiza datos de la colección Funko",
+  "scrappingNews.texto": "Nodejs scrapping api para la app de noticias locales de Rep Dom",
+  "apiNodeSql.texto": "Api hecha con nodeJs y conéctese al servidor sql para guardar, leer y actualizar datos",
+  "gameJsBeta.texto": "Un juego hecho con javascript vainilla, donde tienes que evitar los asteroides"
 }

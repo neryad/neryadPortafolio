@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-projects',
@@ -6,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./projects.component.css'],
 })
 export class ProjectsComponent implements OnInit {
-  constructor() {}
+  constructor(private router: Router) {}
   projects = [
     {
       name: 'PocketList',
@@ -14,6 +15,8 @@ export class ProjectsComponent implements OnInit {
       description: 'descpPoc.texto',
       img: '../../../assets/img/projects/Pokelist.png',
       link: 'https://neryad.github.io/pocketPage/',
+      repo: '',
+      demo: '',
     },
     {
       name: 'TelePhoneCheck -NPM',
@@ -21,6 +24,8 @@ export class ProjectsComponent implements OnInit {
       description: 'descTelphone.texto',
       img: '../../../assets/img/projects/telphonecheck.jpg',
       link: 'https://www.npmjs.com/package/telephonecheck',
+      repo: '',
+      demo: '',
     },
     {
       name: 'TelePhoneCheck - Pub.dev/flutter',
@@ -28,6 +33,7 @@ export class ProjectsComponent implements OnInit {
       description: 'descTelphone.texto',
       img: '../../../assets/img/projects/telefonePub.png',
       link: 'https://pub.dev/packages/telephone_check',
+
     },
     {
       name: 'bryanrivas.com',
@@ -37,5 +43,9 @@ export class ProjectsComponent implements OnInit {
       link: 'https://bryanrivas.com/',
     },
   ];
+
+  gotToProjects() {
+    this.router.navigate(['/projectsAll']);
+  }
   ngOnInit(): void {}
 }

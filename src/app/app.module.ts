@@ -10,6 +10,7 @@ import { AppComponent } from './app.component';
 import { HomeModule } from './home/home.module';
 import { SharedModule } from './shared/shared.module';
 import { ComponentsModule } from './components/components.module';
+import { ProjectsPageModule } from './projects-page/projects-page.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -18,6 +19,7 @@ import { ComponentsModule } from './components/components.module';
     AppRoutingModule,
     HomeModule,
     SharedModule,
+    ProjectsPageModule,
     ComponentsModule,
     HttpClientModule,
     TranslateModule.forRoot({

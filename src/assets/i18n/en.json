@@ -15,5 +15,19 @@
   "me.texto": "me",
   "about1.texto": "👋 Hi!, I'ma web developer oriented more to javascript technologies with a touch of flutter.",
   "about2.texto": "🔨 Tools:",
-  "about3.texto": "- JS, Angular, NodeJs, Flutter"
+  "about3.texto": "- JS, Angular, NodeJs, Flutter",
+  "apps.texto": "Here you can see more of my apps that I have developed, many of them live on my twitch channel",
+
+  "rdNews.texto": "Dom Rep local news app, using a nodeJs backend that web-scrapes different news sources",
+  "descpPoc2.texto": "It is a simple application to help you organize your shopping list, made with flutter. Available totally free on google play and app store",
+  "nTrix.texto": "Its a simple tetrix game made with vanilla javascript, for better expericence play on mobile resolution",
+  "quizBrais.texto": "Solution made in angular of the moureDev challenge in making a quiz app",
+  "llevaCuentas.texto": "App made with ionic to manage money from external people or own savings",
+  "memories.texto": "App made with flutter, its a memory game that you can play with three leves of difficulty. Inside the repo you will find de apks for test the app",
+  "ticTac.texto": "Tic-Tac-Toe game made with flutter. Inside the repo you will find de apks for test the app",
+  "nBattleShips.texto": "Its battle ships game made with angular, this works that two player con play de game and the same time",
+  "funkoApi.texto": "Api made with nodeJs save, read and update data of the Funko collection",
+  "scrappingNews.texto": "Nodejs scrapping api for the Dom Rep local news app",
+  "apiNodeSql.texto":"Api made with nodeJs and connect to sql server to save, read and update data",
+  "gameJsBeta.texto":"A game made with vanilla javascript, where you have to avoid th asteroids"
 }

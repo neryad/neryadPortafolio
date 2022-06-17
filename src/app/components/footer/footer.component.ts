@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
   constructor() {}
+  currentDate = new Date();
+  year = this.currentDate.getFullYear();
   socials = [
     {
       link: 'https://www.instagram.com/neryad_dev/',
@@ -14,7 +16,7 @@ export class FooterComponent implements OnInit {
     },
     {
       link: 'https://twitter.com/NeryadG',
-      icon: 'https://img.icons8.com/bubbles/100/000000/twitter.png',
+      icon: 'https://img.icons8.com/bubbles/100/000000/twitter-squared.png',
     },
     {
       link: 'https://www.linkedin.com/in/dayern-gomez/',

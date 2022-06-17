@@ -13,6 +13,7 @@ import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { ComponentsRoutingModule } from './components-routing.module';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { ComponentsRoutingModule } from './components-routing.module';
     ServiceComponent,
     HeroComponent,
     TranslationComponent,
+
   ],
   imports: [
     CommonModule,
@@ -47,6 +49,7 @@ import { ComponentsRoutingModule } from './components-routing.module';
     ServiceComponent,
     HeroComponent,
     TranslationComponent,
+    RouterModule
   ],
 })
 export class ComponentsModule {}

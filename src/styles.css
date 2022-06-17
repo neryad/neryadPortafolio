@@ -68,6 +68,30 @@ p {
   color: white;
   background-color: #41cad9;
 }
+
+
+.cta2 {
+  display: inline-block;
+  padding: 10px 30px;
+  color: black;
+  background-color: transparent;
+  border: 2px solid #41cad9;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  margin-top: 30px;
+  transition: 0.3s ease;
+  transition-property: background-color, color;
+}
+
+.cta-pro {
+  padding: 2px 7px !important;
+}
+
+.cta2:hover {
+  color: white;
+  background-color: #41cad9;
+}
 .brand h1 {
   font-size: 3rem;
   text-transform: uppercase;
